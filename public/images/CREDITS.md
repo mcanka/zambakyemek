@@ -40,6 +40,15 @@ gereken daha büyük bağlamlar için saklanmaktadır. `<Image>` bileşenlerinde
 `width`/`height` bu yeni en-boy oranına (~2.11:1) göre güncellenmiştir —
 eski dosyalarla (1436×1200, ~1.2:1) karıştırılmamalıdır.
 
+## zambak-icon-mark.png (Hero filigranı)
+
+Marka sahibinin sağladığı beyaz zeminli logo görselinden (zemin tam
+`#ffffff`) yalnızca ikon kısmı (dairesel çerçeveli "Z" + zambak çiçeği,
+koyu yeşil/siyah çizgili, altın çiçek) çıkarılıp arka planı şeffaflaştırıldı
+(885×886). Anasayfa Hero bölümünde, eski "Tesis Fotoğrafı" yer tutucusunun
+yerine, sağ kenardan taşan, düşük opaklıkta (%8) büyük bir marka
+filigranı olarak kullanılıyor — bkz. `src/components/sections/Hero.tsx`.
+
 **Önemli — `light` varyantı güncellenmedi:** `zambak-logo-light-compact.png`
 ve `zambak-logo-light-transparent.png` hâlâ ESKİ logo tasarımından (dikey
 "Z" harfli, dairesel çerçevesiz) kalma dosyalardır; marka sahibi yalnızca

@@ -1,27 +1,24 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { Placeholder } from "@/components/ui/Placeholder";
 import { Reveal } from "@/components/ui/Reveal";
 import { COMPANY } from "@/lib/data";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-koyu">
-      <Placeholder
-        label="Tesis Fotoğrafı — Yer Tutucu"
-        src="/images/ekipman-detay.jpg"
-        alt="Zambak Yemek üretim tesisi"
-        tone="koyu"
-        className="absolute inset-0"
+      <Image
+        src="/images/zambak-icon-mark.png"
+        alt=""
+        aria-hidden
+        width={885}
+        height={886}
         priority
+        className="pointer-events-none absolute right-[-6%] top-1/2 w-[clamp(320px,46vw,640px)] h-auto -translate-y-1/2 opacity-[0.08]"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-r from-koyu via-koyu/85 to-koyu/55"
-      />
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-gradient-to-t from-koyu-2 via-transparent to-transparent"
+        className="absolute inset-0 bg-gradient-to-r from-koyu via-koyu/40 to-transparent"
       />
 
       <Container className="relative pt-16 pb-14 md:pt-24 md:pb-24">
