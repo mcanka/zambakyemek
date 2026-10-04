@@ -72,14 +72,15 @@ export const CERTIFICATIONS = [
   "TSE Hizmet Yeterlilik Belgesi",
 ] as const;
 
-// Ölçek yerine süreç/kalite disiplinini vurgulayan istatistikler — büyüklük
-// iddia eden rakamlar (kapalı alan, personel, araç sayısı) yerine ISO/HACCP
-// belge sayısı ve hizmet çeşitliliği gibi doğrulanabilir bilgiler kullanılıyor.
+// Ölçek yerine aile işletmesi kimliğini ve hizmet modelini vurgulayan
+// istatistikler — büyüklük iddia eden rakamlar yerine markanın gerçek
+// karakterini (aile işletmesi, tek merkezden yerinde dağıtım, sıcak/soğuk
+// yemek seçeneği) anlatan bilgiler kullanılıyor.
 export const STATS = [
-  { value: CERTIFICATIONS.length, suffix: "", unit: "", label: "Kalite ve Hijyen Belgesi" },
-  { value: SERVICES.length, suffix: "", unit: "", label: "Farklı Hizmet Alanı" },
-  { value: 7, suffix: "/24", unit: "", label: "Kesintisiz Üretim Disiplini" },
-  { value: 100, suffix: "%", unit: "", label: "Soğuk Zincirle Teslimat" },
+  { value: 100, suffix: "%", unit: "", label: "Aile İşletmesi" },
+  { value: 1, suffix: "", unit: "", label: "Merkez Şubeden Dağıtım" },
+  { value: 2, suffix: "", unit: "", label: "Sıcak ve Soğuk Yemek Seçeneği" },
+  { value: 7, suffix: "/24", unit: "", label: "Yerinde Dağıtım" },
 ] as const;
 
 export const RECIPE_CARD = {
